@@ -13,10 +13,6 @@ fetch(url, options)
 	.then(response => console.log(response))
 	.catch(err => console.error(err))
 
-// fetch(url, options)
-//   .then((response) => response.json())
-//   .then((data) => console.log(data));
-
 
 
 
