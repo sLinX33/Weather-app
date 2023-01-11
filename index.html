@@ -57,15 +57,15 @@
             <div class="col">
               <div class="card mb-4 rounded-3 shadow-sm">
                 <div class="card-header py-3">
-                  <h4 class="my-0 fw-normal">Temp</h4>
+                  <h4 class="my-0 fw-normal">Temperatures</h4>
                 </div>
                 <div class="card-body">
                   <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
                   <ul class="list-unstyled mt-3 mb-4">
-                    <li>10 users included</li>
-                    <li>2 GB of storage</li>
-                    <li>Email support</li>
-                    <li>Help center access</li>
+                    <li>Temperature is <span id="temp"></span></li>
+                    <li>Minimum Temperature is <span id="min_temp"></span></li>
+                    <li>Maximum Temperature is <span id="max_temp"></span></li>
+                    <li>Cloud Pct is <span id="cloud_pct"></span></li>
                   </ul>
                   <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
                 </div>
@@ -79,10 +79,10 @@
                 <div class="card-body">
                   <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
                   <ul class="list-unstyled mt-3 mb-4">
-                    <li>20 users included</li>
-                    <li>10 GB of storage</li>
-                    <li>Priority email support</li>
-                    <li>Help center access</li>
+                    <li>Feels like is <span id="feels_like"></span></li>
+                    <li>Humidity is <span id="humidity"></span></li>
+                    <li>Sunrise is <span id="sunrise"></span></li>
+                    <li>Sunset is <span id="sunset"></span></li>
                   </ul>
                   <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
                 </div>
@@ -96,10 +96,8 @@
                 <div class="card-body">
                   <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
                   <ul class="list-unstyled mt-3 mb-4">
-                    <li>30 users included</li>
-                    <li>15 GB of storage</li>
-                    <li>Phone and email support</li>
-                    <li>Help center access</li>
+                    <li>Wind speed is <span id="wind_speed"></span></li>
+                    <li>Wind degree is <span id="wind_degrees"></span></li>
                   </ul>
                   <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
                 </div>
@@ -113,6 +111,7 @@
             <table class="table text-center">
               <thead>
                 <tr>
+                  <th></th>
                   <th style="width: 22%;">Cloud_pct  </th>
                   <th style="width: 22%;">Feels_like </th>
                   <th style="width: 22%;">Humidity </th>
@@ -137,6 +136,7 @@
                   <td>7</td>
                   <td>8</td>
                   <td>9</td>
+                  <td>10</td>
                 </tr>
                 <tr>
                   <th scope="row" class="text-start">Boston</th>
@@ -149,6 +149,7 @@
                   <td>7</td>
                   <td>8</td>
                   <td>9</td>
+                  <td>10</td>
                 </tr>
               </tbody>
       
@@ -164,6 +165,7 @@
                   <td>7</td>
                   <td>8</td>
                   <td>9</td>
+                  <td>10</td>
                 </tr>
                 <tr>
                   <th scope="row" class="text-start">London</th>
@@ -176,6 +178,7 @@
                   <td>7</td>
                   <td>8</td>
                   <td>9</td>
+                  <td>10</td>
                 </tr>
                 <tr>
                   <th scope="row" class="text-start">New Delhi</th>
@@ -188,6 +191,7 @@
                   <td>7</td>
                   <td>8</td>
                   <td>9</td>
+                  <td>10</td>
                 </tr>
                 <tr>
                   <th scope="row" class="text-start">Paris</th>
@@ -200,6 +204,7 @@
                   <td>7</td>
                   <td>8</td>
                   <td>9</td>
+                  <td>10</td>
                 </tr>
               </tbody>
             </table>
