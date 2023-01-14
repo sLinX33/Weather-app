@@ -36,5 +36,14 @@ submit.addEventListener("click", (e)=> {
 	getWeather(city.value);
 })
 
+
+seattle.addEventListener("click", ()=>{
+	getWeather("Seattle");
+});
+london.addEventListener("click", ()=> {
+	getWeather("London")
+});
+
+
 getWeather("Kathmandu")
 
