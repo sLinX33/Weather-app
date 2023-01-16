@@ -5,6 +5,7 @@ const options = {
 		'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com'
 	}
 };
+
 const getWeather = (city)=> {
 	cityName.innerHTML = city
 	fetch(`https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=${city}`, options)
@@ -30,12 +31,10 @@ const getWeather = (city)=> {
 .catch(err => console.error(err))
 };
 
-// const submit = document.getElementById("submit");
 submit.addEventListener("click", (e)=> {
 	e.preventDefault();
 	getWeather(city.value);
 })
-
 
 seattle.addEventListener("click", ()=>{
 	getWeather("Seattle");
@@ -44,6 +43,7 @@ london.addEventListener("click", ()=> {
 	getWeather("London")
 });
 
-
 getWeather("Kathmandu")
+
+
 
