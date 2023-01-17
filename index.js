@@ -43,6 +43,14 @@ london.addEventListener("click", ()=> {
 	getWeather("London")
 });
 
+
+const shangai = "Shangai";
+function getDefaultWeather(defaultCity) {
+	let shangaiObj = getWeather(defaultCity);
+	let string = JSON.stringify(shangaiObj);
+	console.log(string.cloud_pct);
+}
+getDefaultWeather(shangai);
 getWeather("Kathmandu")
 
 
