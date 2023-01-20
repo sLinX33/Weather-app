@@ -44,9 +44,16 @@ london.addEventListener("click", ()=> {
 });
 
 
-const shangai = "Shangai";
+const contentCity = {
+	name: "Shangai",
+	name: "Paris",
+	name: "Tokyo",
+	name: "London"
+};
+
 function getDefaultWeather(defaultCity) {
-	let shangaiObj = getWeather(defaultCity);
+	let shangaiObj = (getWeather(defaultCity));
+	
 }
 getDefaultWeather(shangai);
 getWeather("Kathmandu")
